@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ===== ESTRUCTURA BÁSICA Y HEAD ===== -->
+<head>
+  <meta charset="UTF-8"> <!-- Permite acentos y ñ -->
+  <title>Pedidos | YoungLA México</title> <!-- Texto de la pestaña -->
+  <link rel="stylesheet" href="estilos.css"> <!-- Conecta la hoja de estilos -->
+</head>
+<body>
+<!-- ===== ENCABEZADO, LOGOTIPO Y MENÚ DE NAVEGACIÓN ===== -->
+<header>
+  <div class="marca">
+    <img src="img/logo.png" alt="Logotipo YoungLA">
+    <h1>YOUNGLA</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="nosotros.html">Quiénes somos</a>
+    <a href="pedidos.html" class="activo">Pedidos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+<main>
+<!-- ===== FORMULARIO DE PEDIDOS: DATOS DEL CLIENTE ===== -->
+<h2>Realiza tu pedido</h2>
+<div class="caja">
+  <form action="#" method="post">
+    <h3>Datos del cliente</h3>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="direccion">Dirección de entrega:</label>
+    <textarea id="direccion" name="direccion" rows="3" required></textarea>
+
+    <!-- ===== DATOS DEL PEDIDO: PRODUCTO, TALLA Y CANTIDAD ===== -->
+    <h3>Datos del pedido</h3>
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto" required>
+      <option value="">-- Selecciona un producto --</option>
+      <option>Jogger Skully - $1,200</option>
+      <option>Playera de Compresión Superman - $999</option>
+      <option>Playera de Compresión Batman - $999</option>
+      <option>Jogger Cargo Femenino Camuflaje Rosa - $1,299</option>
+      <option>Playera Golds Gym - $999</option>
+      <option>Playera Demon Slayer - $999</option>
+      <option>Jogger Axel - $1,200</option>
+    </select>
+
+    <label for="talla">Talla:</label>
+    <select id="talla" name="talla" required>
+      <option value="">-- Selecciona una talla --</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad"
+           min="1" max="10" value="1" required>
+
+    <!-- ===== MÉTODO DE PAGO, COMENTARIOS Y BOTÓN DE ENVÍO ===== -->
+    <label>Método de pago:</label>
+    <p>
+      <input type="radio" name="pago" value="tarjeta" checked> Tarjeta
+      <input type="radio" name="pago" value="transferencia"> Transferencia
+      <input type="radio" name="pago" value="efectivo"> Efectivo en tienda
+    </p>
+
+    <label for="comentarios">Comentarios (opcional):</label>
+    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+
+    <button type="submit">Enviar pedido</button>
+  </form>
+</div>
+
+<!-- ===== PIE DE PÁGINA ===== -->
+</main>
+<footer>
+  <p>&copy; 2026 YoungLA México S.A. de C.V. (empresa utilizada con fines académicos)</p>
+</footer>
+</body>
+</html>

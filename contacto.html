@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ===== ESTRUCTURA BÁSICA Y HEAD ===== -->
+<head>
+  <meta charset="UTF-8"> <!-- Permite acentos y ñ -->
+  <title>Contacto | YoungLA México</title> <!-- Texto de la pestaña -->
+  <link rel="stylesheet" href="estilos.css"> <!-- Conecta la hoja de estilos -->
+</head>
+<body>
+<!-- ===== ENCABEZADO, LOGOTIPO Y MENÚ DE NAVEGACIÓN ===== -->
+<header>
+  <div class="marca">
+    <img src="img/logo.png" alt="Logotipo YoungLA">
+    <h1>YOUNGLA</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="nosotros.html">Quiénes somos</a>
+    <a href="pedidos.html">Pedidos</a>
+    <a href="contacto.html" class="activo">Contacto</a>
+  </nav>
+</header>
+<main>
+<!-- ===== DATOS DE CONTACTO (TABLA) ===== -->
+<h2>Contacto</h2>
+<table class="datos">
+  <tr>
+    <td>Dirección</td>
+    <td>Av. Vallarta 1234, Col. Americana, C.P. 44160, Guadalajara, Jalisco</td>
+  </tr>
+  <tr><td>Teléfono</td><td>(33) 1234 5678</td></tr>
+  <tr><td>Correo</td><td>contacto@youngla.com.mx</td></tr>
+  <tr><td>Horario</td><td>Lunes a sábado de 10:00 a 20:00 h</td></tr>
+</table>
+
+<!-- ===== FORMULARIO DE CONTACTO ===== -->
+<h2>Envíanos un mensaje</h2>
+<div class="caja">
+  <form action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<!-- ===== PIE DE PÁGINA ===== -->
+</main>
+<footer>
+  <p>&copy; 2026 YoungLA México S.A. de C.V. (empresa utilizada con fines académicos)</p>
+</footer>
+</body>
+</html>
